@@ -18,3 +18,4 @@ test:
 production:
   <<: *default
   database: <%= ENV.fetch('DATABASE_NAME', 'barong_production') %>
+  idle_timeout: 0
